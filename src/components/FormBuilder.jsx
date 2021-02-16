@@ -20,7 +20,7 @@ const FormBuilder = (props) => {
   const onChange = () => {
     const {onChange} = props;
     if (onChange && typeof onChange === 'function') {
-      onChange(builder.instance.form);
+      onChange(builder.instance.form, builder.instance.schema);
     }
   };
 
